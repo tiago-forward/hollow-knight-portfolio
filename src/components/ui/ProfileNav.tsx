@@ -26,7 +26,7 @@ export default function ProfileNav() {
           <img src={ArrowLeft} alt="Arrow" className="mt-1 w-8 h-auto" />
         </div>
       </button>
-      <h2 className="select-none uppercase text-4xl font-bold">
+      <h2 className="select-none uppercase text-2xl lg:text-4xl font-bold">
         {sections[index]}
       </h2>
       <button

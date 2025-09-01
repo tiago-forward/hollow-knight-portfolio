@@ -7,16 +7,16 @@ export default function Profile() {
   const { index } = useProfileNavStore();
 
   return (
-    <div className="mx-auto max-w-3xl px-6 py-6">
+    <div className="mx-auto max-w-3xl lg:px-6 lg:py-6">
       <div className="flex flex-col items-center relative mt-12">
         <img
           src={UpDetailProfile}
           alt="up detail profile"
           className="absolute -top-12 z-10"
         />
-        <div className="bg-black/70 backdrop-blur-xs h-[300px] p-4 w-full">
+        <div className="bg-black/70 backdrop-blur-xs min-h-[300px] pb-10 lg:text-xl p-4 w-full">
           {index === 0 && (
-            <p className="text-xl">
+            <p>
               Apaixonado por computadores desde os 12 anos, sempre me encantei
               ao ver sites bem estruturados e visualmente atraentes na web, além
               de outros tipos de layouts. Durante minha formação em Análise e
@@ -29,7 +29,7 @@ export default function Profile() {
           )}
 
           {index === 1 && (
-            <p className="text-xl">
+            <p>
               Atualmente atuando como Desenvolvedor Web (primeira experiência
               profissional). Experiência prática com JavaScript/TypeScript,
               React, Next.js, Git/GitHub. Sigo me aprimorando com projetos
@@ -40,14 +40,17 @@ export default function Profile() {
             </p>
           )}
           {index === 2 && (
-            <p className="text-xl">
-              Tenho experiência profissional como atendimento telemarketing e
-              principalmente como secretário médico, onde adquiri maior parte de
-              todas as minhas competências pessoais, como, trabalho em equipe,
-              liderança, facilidade em se comunicar, bom ouvinte, disciplinado,
-              empatia e digitação onde passei maior parte do meu tempo. Fico
-              disponível para batermos um papo para falar mais sobre minhas
-              habilidades e experiências!
+            <p>
+              Tenho experiência profissional em atendimento de telemarketing e,
+              principalmente, como secretário médico, onde desenvolvi grande
+              parte das minhas competências pessoais, como trabalho em equipe,
+              liderança, comunicação clara, escuta ativa, disciplina, empatia e
+              habilidade em digitação. Como desenvolvedor front-end, prestando
+              suporte e solucionando demandas internas da empresa. Além disso,
+              participei ativamente do desenvolvimento de dois projetos
+              iniciados do zero junto aos meus colegas, adquirindo experiência
+              prática em programação, organização de tarefas e entrega de
+              soluções.
             </p>
           )}
         </div>

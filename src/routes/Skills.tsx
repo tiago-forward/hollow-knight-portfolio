@@ -65,7 +65,7 @@ export default function Skills() {
   }, [isDragging]);
 
   return (
-    <div className="mx-auto max-w-3xl px-6 py-6">
+    <div className="mx-auto max-w-3xl p-2 lg:px-6 lg:py-6">
       <div className="flex flex-col">
         <h2 className="text-3xl font-bold text-center">Habilidades</h2>
         <img src={UpDetailSkills} alt="up detail skills" className="m-auto" />
